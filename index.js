@@ -11,7 +11,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const email = process.env.EMAIL || 'testemail@example.com'
+const email = process.env.EMAIL || 'your-email@example.com'
 const name = process.env.NAME || 'John Doe'
 const stack = process.env.STACK || 'Node.js/Express'
 
