@@ -1,0 +1,20 @@
+{
+  "name": "hng-stage0-be-profile-endpoint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "IfeCodes",
+  "license": "ISC",
+  "description": "HNG Internship Stage 0 — Backend task: a simple RESTful API endpoint returning user profile data and a random cat fact using Node.js and Express.",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "morgan": "^1.10.1"
+  }
+}
