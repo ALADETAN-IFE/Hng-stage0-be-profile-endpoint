@@ -79,7 +79,7 @@ app.use('/', (req, res, next) => {
 });
 
 app.use((req, res) => {
-  res.status(404).send('Page not found');
+  res.status(404).send('Endpoint not found');
 });
 
 
