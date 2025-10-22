@@ -72,7 +72,7 @@ Response
 | -----: | --------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 |    500 | { "status": "error", "message": "Unable to fetch cat fact at the moment." } | Returned when the external Cat Facts API fails or times out           |
 |    405 | Method Not Allowed                                                          | Returned when using an invalid HTTP method (e.g. POST instead of GET) |
-|    404 | Page not found                                                              | Returned for invalid routes                                           |
+|    404 | Endpoint not found                                                          | Returned for invalid routes                                           |
 
 ---
 
