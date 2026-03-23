@@ -1,4 +1,6 @@
 const express = require("express");
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger.json");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const axios = require("axios");
@@ -24,6 +26,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(morgan("dev"));
+
+// Swagger UI
+app.use('/api-doc', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 const limiter = rateLimit({
