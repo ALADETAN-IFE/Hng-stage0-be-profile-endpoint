@@ -27,8 +27,8 @@
                         "stack": { "type": "string" }
                       }
                     },
-                    "timestamp": { "type": "string", "format": "date-time" },
-                    "fact": { "type": "string" }
+                    "fact": { "type": "string" },
+                    "timestamp": { "type": "string", "format": "date-time" }
                   }
                 }
               }

@@ -59,8 +59,8 @@ app.get("/me", async (req, res) => {
         name,
         stack,
       },
-      timestamp: new Date().toISOString(),
       fact: data.fact,
+      timestamp: new Date().toISOString(),
     };
 
     res.status(200).json(response);
