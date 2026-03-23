@@ -5,5 +5,40 @@
     "version": "1.0.0",
     "description": "API documentation for the HNG Stage 0 Profile Endpoint project."
   },
-  "paths": {}
+  "paths": {
+    "/me": {
+      "get": {
+        "summary": "Get user profile and a random cat fact",
+        "description": "Returns user profile information and a random cat fact.",
+        "responses": {
+          "200": {
+            "description": "Successful response with user profile and cat fact",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string" },
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "email": { "type": "string" },
+                        "name": { "type": "string" },
+                        "stack": { "type": "string" }
+                      }
+                    },
+                    "timestamp": { "type": "string", "format": "date-time" },
+                    "fact": { "type": "string" }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error fetching cat fact"
+          }
+        }
+      }
+    }
+  }
 }
