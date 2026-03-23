@@ -9,6 +9,9 @@ Built using **Node.js**, **Express.js**, and **Axios**.
 ## 🚀 Live API
 [Live API Link on Railway](https://profile-endpoint-hng-0.up.railway.app/me)
 
+## Live API DOCUMENTATION
+[Live API Documentation on SwaggerDocs](https://profile-endpoint-hng-0.up.railway.app/api-doc)
+
 ---
 
 ## 🧩 Features
